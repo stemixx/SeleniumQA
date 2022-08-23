@@ -11,7 +11,7 @@ import math
 link = "http://suninjuly.github.io/find_xpath_form"
 
 try:
-    browser = webdriver.Chrome('E:\!install\chromedriver.exe')
+    browser = webdriver.Chrome()
     browser.get(link)
 
     input_name = browser.find_element(By.XPATH, "//input[@name='first_name']")
@@ -28,8 +28,8 @@ try:
 
 
 finally:
-    # успеваем скопировать код за 30 секунд
-    time.sleep(30)
+    # успеваем скопировать код за 10 секунд
+    time.sleep(10)
     # закрываем браузер после всех манипуляций
     browser.quit()
 
