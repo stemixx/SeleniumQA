@@ -13,7 +13,7 @@ finding_text = str(math.ceil(math.pow(math.pi, math.e) * 10000))
 link = "http://suninjuly.github.io/find_link_text"
 
 try:
-    browser = webdriver.Chrome('E:\!install\chromedriver.exe')
+    browser = webdriver.Chrome()
     browser.get(link)
 
     find_hidden_link = browser.find_element(By.PARTIAL_LINK_TEXT, finding_text)
