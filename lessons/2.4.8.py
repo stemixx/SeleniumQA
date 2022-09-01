@@ -21,6 +21,7 @@ try:
     math_operation_field = browser.find_element(By.ID, 'answer')
     math_operation_field.send_keys(func)
     button = browser.find_element(By.ID, 'solve')
+    browser.execute_script("return arguments[0].scrollIntoView(true);", button)
     button.click()
     alert_text = browser.switch_to.alert.text
     print(alert_text)
