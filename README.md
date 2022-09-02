@@ -8,7 +8,7 @@ pip install selenium
 ```
 Download a webdriver from https://chromedriver.chromium.org/downloads
 Your Chrome browser should be the same version like webdriver
-Then copy webdriver to < /usr/local/bin  />
+Then copy webdriver to /usr/local/bin and make him executable
 ```
 sudo cp /home/user/download/chromedriver /usr/local/bin/chromedriver
 sudo chown root:root /usr/local/bin/chromedriver
