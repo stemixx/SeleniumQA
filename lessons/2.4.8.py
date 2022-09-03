@@ -8,6 +8,9 @@ import math
 
 browser = webdriver.Chrome()
 
+def Foo(x):
+    return math.log(abs(12 * math.sin(x)))
+
 try:
     browser.get("http://suninjuly.github.io/explicit_wait2.html")
 
@@ -17,9 +20,8 @@ try:
     button = browser.find_element(By.ID, 'book')
     button.click()
     x = int(browser.find_element(By.ID, 'input_value').text)
-    func = math.log(abs(12 * math.sin(x)))
     math_operation_field = browser.find_element(By.ID, 'answer')
-    math_operation_field.send_keys(func)
+    math_operation_field.send_keys(Foo(x))
     button = browser.find_element(By.ID, 'solve')
     browser.execute_script("return arguments[0].scrollIntoView(true);", button)
     button.click()
