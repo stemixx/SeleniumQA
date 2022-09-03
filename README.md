@@ -4,7 +4,7 @@ This is repo to do tasks from Stepik course https://stepik.org/course/575
 
 To start a course run command from your python project:
 ```
-pip install selenium
+pip install selenium pytest
 ```
 Download a webdriver from https://chromedriver.chromium.org/downloads
 Your Chrome browser should be the same version like webdriver
